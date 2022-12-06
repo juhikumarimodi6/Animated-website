@@ -1,0 +1,91 @@
+body {
+background-image:url('images/background1.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100vh;
+animation-name:background;
+animation-duration:10s;
+animation-iteration-count:infinite;
+}
+.items {
+background-color:black;
+display:flex;
+height:80px;
+align-content:center;
+}
+
+li {
+display:flex;
+float:left;
+list-style-type:none;
+background:black;
+align-items:center;
+}
+ul {
+display:flex;
+width:50vw;
+justify-content:space-around;
+}
+li > a {
+text-decoration:none;
+font-size:20px;
+color:gold;
+}
+input {
+border-radius:2px;
+height:20px;
+margin:25px;
+width:40vw;
+}
+
+p{
+color:yellow;
+font-size:30px;
+animation-name:welcome;
+animation-duration:5s;
+animation-iteration-count:infinite;
+text-shadow:2px 2px 2px white;
+}
+.main{
+display:flex;
+justify-content:center;
+height:50vh;
+align-items:center;
+}
+div.animation {
+width:10px;
+height:10px;
+position:relative;
+right:450px;
+bottom:120px;
+transform:rotate(0deg);
+border:solid brown;
+}
+
+div.animation  img {
+position:absolute;
+width:80px;
+transition:opacity 2s, transform 2s ease-in-out;
+}
+
+div.animation  img.top:hover {
+opacity:0;
+//transform:rotate(180deg);
+}
+
+@keyframes welcome {
+0% {color:violet;}
+15% {color:#fe01b1;}
+30% {color:#41fdfe;}
+45% {color:#08ff08;}
+60% {color:yellow;}
+75% {color:#ff7034;}
+100% {color:red;}
+}
+
+@keyframes images {
+
+}
+
+
+
